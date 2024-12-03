@@ -18,4 +18,9 @@ public class HelloController {
 		return "Welcome to git";
 	}
 	
+	@GetMapping(value = "/welcometojava")
+	public String getMessageeWelcome() {
+		return "Welcome to java";
+	}
+	
 }
