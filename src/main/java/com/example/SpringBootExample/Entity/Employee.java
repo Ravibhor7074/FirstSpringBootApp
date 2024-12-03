@@ -10,6 +10,8 @@ public class Employee {
 	private String dept;
 	private String empnm;
 	private String empfile;
+	private String file;
+	private String age;
 	
 	public Employee() {
 		super();
