@@ -6,6 +6,8 @@ public class Employee {
 	private String name;
 	private String sal;
 	private String dob;
+	private String nm;
+	private String dept;
 	
 	public Employee() {
 		super();
