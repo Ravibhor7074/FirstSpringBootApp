@@ -27,11 +27,7 @@ public class HelloController {
 	public String getMessageeeWelcome() {
 		return "Welcome to java";
 	}
-	
-	@GetMapping(value = "/java")
-	public String getJava() {
-		return "Welcome to java";
-	}
+
 	
 	@GetMapping(value = "/java")
 	public String getJava() {
