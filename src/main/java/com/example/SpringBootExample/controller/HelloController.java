@@ -28,4 +28,9 @@ public class HelloController {
 		return "Welcome to java";
 	}
 	
+	@GetMapping(value = "/java")
+	public String getJava() {
+		return "Welcome to java";
+	}
+	
 }
