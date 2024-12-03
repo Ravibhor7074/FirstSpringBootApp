@@ -4,6 +4,8 @@ public class Employee {
 	
 	private int id;
 	private String name;
+	private String sal;
+	private String dob;
 	
 	public Employee() {
 		super();
