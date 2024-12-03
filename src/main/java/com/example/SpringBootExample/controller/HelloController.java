@@ -1,6 +1,9 @@
 package com.example.SpringBootExample.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,24 +17,14 @@ public class HelloController {
 	}
 	
 	@GetMapping(value = "/welcome")
-	public String getMessageWelcome() {
-		return "Welcome to git";
-	}
-
-	@GetMapping(value = "/welcometojava")
-	public String getMessageeWelcome() {
-		return "Welcome to java";
+	public String getWelcome() {
+		return "Welcome";
 	}
 	
-	@GetMapping(value = "/welcometojava")
-	public String getMessageeeWelcome() {
-		return "Welcome to java";
-	}
-
-	
-	@GetMapping(value = "/java")
-	public String getJava() {
-		return "Welcome to java";
+	@PostMapping(value = "/post")
+	public ResponseEntity<?> saveEmployee() {
+		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 	
+		
 }
