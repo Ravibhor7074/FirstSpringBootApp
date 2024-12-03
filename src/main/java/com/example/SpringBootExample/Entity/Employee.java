@@ -8,6 +8,8 @@ public class Employee {
 	private String dob;
 	private String nm;
 	private String dept;
+	private String file;
+	private String age;
 	
 	public Employee() {
 		super();
