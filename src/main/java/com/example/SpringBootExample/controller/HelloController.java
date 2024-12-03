@@ -12,4 +12,10 @@ public class HelloController {
 	public String getMessage() {
 		return "hello";
 	}
+	
+	@GetMapping(value = "/welcome")
+	public String getMessageWelcome() {
+		return "Welcome to git";
+	}
+	
 }
