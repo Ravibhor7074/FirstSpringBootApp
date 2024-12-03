@@ -19,7 +19,7 @@ public class HelloController {
 	}
 
 	@GetMapping(value = "/welcometojava")
-	public String getMessageWelcome() {
+	public String getMessageeWelcome() {
 		return "Welcome to java";
 	}
 	
